@@ -1,8 +1,10 @@
 import Form from "./Form";
+import ethereumLogo from "/public/ethereum.png";
 
 function Main() {
   return (
     <div className="px-48 py-24">
+      <img src={ethereumLogo} className="mb-8 w-24" />
       <h1 className="mb-4 text-2xl font-semibold">eth-read</h1>
       <div className="mb-8 text-slate-600">
         <p>
@@ -19,7 +21,11 @@ function Main() {
         <p>Only works for verified contracts on Etherscan.</p>
       </div>
       <div className="mb-6">
-        <a href="" target="_blank" className="underline">
+        <a
+          href="https://github.com/sounak98/eth-read"
+          target="_blank"
+          className="underline"
+        >
           Github repository
         </a>
       </div>
