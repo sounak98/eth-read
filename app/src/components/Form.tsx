@@ -6,6 +6,7 @@ import read from "../api/read";
 import Input from "./Input";
 import MultiInput from "./MultiInput";
 import Result from "./Result";
+import { AxiosError } from "axios";
 
 function Form() {
   const [address, setAddress] = useState<string>("");
@@ -31,7 +32,7 @@ function Form() {
       />
       {isError && (
         <div className="text-sm text-orange-700">
-          Error: "{error.response.data.message}". Please try again.
+          Error: "{((error! as AxiosError).response!.data as {message: string}).message}". Please try again.
         </div>
       )}
       <button
@@ -42,7 +43,7 @@ function Form() {
           "bg-gray-700 hover:bg-gray-900 disabled:bg-gray-500",
           "focus:outline-none focus:ring-4 focus:ring-gray-300"
         )}
-        onClick={mutate}
+        onClick={() => mutate()}
       >
         {isLoading ? "Loading..." : "Get Result"}
       </button>

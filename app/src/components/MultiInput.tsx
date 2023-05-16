@@ -38,10 +38,10 @@ function MultiInput(props: MultiInputProps) {
       )}
       <div className="flex flex-col items-stretch gap-4">
         {[
-          elements.map((element, index) => (
+          elements.map((element, index: number) => (
             <div key={index} className="flex flex-row items-stretch gap-2">
               <input
-                value={elements[index]}
+                value={element}
                 type="text"
                 placeholder={`${props.inputElement} ${index + 1}`}
                 onChange={(e) => updateElement(e.target.value, index)}
