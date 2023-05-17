@@ -44,7 +44,7 @@ Tests have been written to test edge cases, common error scenarios and their res
 
 #### Deployment
 
-Deployed using render at https://eth-read-api.onrender.com. For running locally check [api/README.md](./api/README.md).
+Deployed using render at https://eth-read-api.onrender.com. Note that the first request might take longer because Render fires up the server on the first request after being idle for long. For running locally check [api/README.md](./api/README.md).
 
 ### App
 
