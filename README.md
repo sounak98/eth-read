@@ -34,7 +34,7 @@ Note that the response always returns string, but the data is in a human readabl
 
 #### Tests
 
-Tests have been written to test edge cases, common error scenarios and their responses. Find the tests at [](./api/test).
+Tests have been written to test edge cases, common error scenarios and their responses. Find the tests at [api/test](./api/test).
 
 #### Improvements
 
@@ -42,7 +42,7 @@ Tests have been written to test edge cases, common error scenarios and their res
 
 #### Deployment
 
-Deployed using render at https://eth-read-api.onrender.com/. For running locally check [api/README.md](./api/README.md).
+Deployed using render at https://eth-read-api.onrender.com. For running locally check [api/README.md](./api/README.md).
 
 ### App
 
@@ -54,4 +54,4 @@ The app is built using React and Vite. It has a simple form which helps users in
 
 #### Deployment
 
-Deployed using render at https://eth-read-app.onrender.com/. For running locally check [app/README.md](./app/README.md).
+Deployed using render at https://eth-read-app.onrender.com. For running locally check [app/README.md](./app/README.md).
