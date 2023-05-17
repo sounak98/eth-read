@@ -14,9 +14,9 @@ An Express webserver with a REST endpoint to read ethereum contract data. The co
 
 ```json
 {
-  "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7", // contract address
-  "method": "balanceOf", // method
-  "args": ["0xdAC17F958D2ee523a2206206994597C13D831ec7"] // arguments
+  "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+  "method": "balanceOf",
+  "args": ["0xdAC17F958D2ee523a2206206994597C13D831ec7"]
 }
 ```
 
@@ -42,7 +42,7 @@ Tests have been written to test edge cases, common error scenarios and their res
 
 #### Deployment
 
-Deployed using render at https://eth-read-api.onrender.com/. For running locally check [](./api/README.md).
+Deployed using render at https://eth-read-api.onrender.com/. For running locally check [api/README.md](./api/README.md).
 
 ### App
 
@@ -54,4 +54,4 @@ The app is built using React and Vite. It has a simple form which helps users in
 
 #### Deployment
 
-Deployed using render at https://eth-read-app.onrender.com/. For running locally check [](./app/README.md).
+Deployed using render at https://eth-read-app.onrender.com/. For running locally check [app/README.md](./app/README.md).
