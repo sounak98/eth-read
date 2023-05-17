@@ -1,5 +1,5 @@
 import Form from "./Form";
-import ethereumLogo from "/public/ethereum.png";
+import ethereumLogo from "/ethereum.png";
 
 function Main() {
   return (
