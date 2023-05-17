@@ -38,7 +38,7 @@ Tests have been written to test edge cases, common error scenarios and their res
 
 #### Improvements
 
-- currently dependent on Etherscan API for contract ABI but there seems be a way to do it without the need for an ABI (found the approach in this article https://louisabraham.github.io/articles/no-abi.html but have not tested it yet)
+- currently dependent on Etherscan API for contract ABI but we could try to detect function selectors in the bytecode (reference https://louisabraham.github.io/articles/no-abi.html)
 
 - read result can be returned in appropriate data types (number, boolean) instead of string
 
