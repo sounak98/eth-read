@@ -12,7 +12,6 @@ router.post(
   asyncHandler(
     async (req: Request<ReadRequest>, res: Response<ReadResponse>) => {
       let { address, method, args } = req.body;
-      // not good ts support, nextjs could have been better
       if (!address || !method || (args && !Array.isArray(args)))
         throw new Error("Invalid request body");
 

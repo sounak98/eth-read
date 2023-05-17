@@ -40,6 +40,8 @@ Tests have been written to test edge cases, common error scenarios and their res
 
 - currently dependent on Etherscan API for contract ABI but there seems be a way to do it without the need for an ABI (found the approach in this article https://louisabraham.github.io/articles/no-abi.html but have not tested it yet)
 
+- read result can be returned in appropriate data types (number, boolean) instead of string
+
 #### Deployment
 
 Deployed using render at https://eth-read-api.onrender.com. For running locally check [api/README.md](./api/README.md).
