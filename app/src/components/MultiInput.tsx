@@ -45,7 +45,7 @@ function MultiInput(props: MultiInputProps) {
                 type="text"
                 placeholder={`${props.inputElement} ${index + 1}`}
                 onChange={(e) => updateElement(e.target.value, index)}
-                className="flex-grow"
+                className="w-full"
               />
               <button
                 onClick={() => deleteElement(index)}

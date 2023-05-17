@@ -7,14 +7,18 @@ function Result({ result }: { result: string }) {
     <div className="flex flex-col items-stretch gap-2">
       <div className="font-semibold text-slate-600">Result</div>
       <div className="flex flex-row gap-2">
-        <div className="flex-grow border border-slate-600 px-3 py-2">
-          {result}
-        </div>
+        <input
+          disabled
+          type="text"
+          value={result}
+          className="w-full border border-slate-600 px-3 py-2"
+        />
         <button
           onClick={() => {
-            navigator.clipboard.writeText(result);
-            setCopyText("Copied!");
-            setTimeout(() => setCopyText("Copy"), 2000);
+            navigator.clipboard.writeText(result).then(() => {
+              setCopyText("Copied!");
+              setTimeout(() => setCopyText("Copy"), 2000);
+            });
           }}
           className="text-sm underline"
         >
